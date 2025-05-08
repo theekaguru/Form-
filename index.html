@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teach to Give Assignment</title>
+  <meta charset="UTF-8">
+  <title>Styled Form with Classes</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body> <header>
-    <h1>Teach To Give Assignment </h1>
-</header>
-    <form>
-        <!--  Text input for Name -->
-        <label for="name">Name:</label>
-        <input type="text" ><br><br>
-    
-        <!--  Password input -->
-        <label for="password">Password:</label>
-        <input type="password" ><br><br>
-    
-        <!--  Email input -->
-        <label for="email">Email:</label>
-        <input type="email" ><br><br>
-    
-        <!-- Radio buttons for Gender -->
-        <label>Gender:</label>
-        <input type="radio">
-        <label for="male">Male</label>
-        <input type="radio" >
-        <label for="female">Female</label><br><br>
-    
-       
-        <!-- Select dropdown -->
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-            <option value="kenya">Kenya</option>
-        </select><br><br>
-    
-        <!--Date picker -->
-        <label for="dob">Date of Birth:</label>
-        <input type="date"> <br><br>
-    
-        <!-- Textarea for message -->
-        <label for="message">Message:</label><br>
-        <textarea id="message" ></textarea><br><br>
-    
-        <!-- Submit button -->
-        <button type="submit">Submit</button>
-    </form>
-    
+<body>
+
+  <form class="form-container">
+    <div class="form-group">
+      <label class="form-label" for="name">Name:</label>
+      <input class="form-input" type="text" id="name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="password">Password:</label>
+      <input class="form-input" type="password" id="password" name="password">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="email">Email:</label>
+      <input class="form-input" type="email" id="email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label class="form-radio-label" for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label class="form-radio-label" for="female">Female</label>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="country">Country:</label>
+      <select class="form-input" id="country" name="country">
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="dob">Date of Birth:</label>
+      <input class="form-input" type="date" id="dob" name="dob">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="message">Message:</label>
+      <textarea class="form-textarea" id="message" name="message"></textarea>
+    </div>
+
+    <div class="form-group">
+      <button class="form-button" type="submit">Submit</button>
+    </div>
+  </form>
+
 </body>
 </html>
